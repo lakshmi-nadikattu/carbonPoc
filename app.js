@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'dist/modelclassforangular'), {
 }));
 // passport.authenticate(STRATEGY_NAME)
 app.get('/', (req, res) => {
-	console.log("req.originalUrl = ", req.originalUrl);
+	console.log("req.originalUrl = ", req.originalUrl,"test");
 	res.sendFile(path.join(__dirname, 'dist/modelclassforangular/index.html'));
 });
 module.exports = app;
